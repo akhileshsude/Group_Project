@@ -151,6 +151,7 @@ body {
   width: 200px;
   border-radius: 20px;
   background-color: rgb(46, 31, 17);
+  box-shadow: 10px 5px 5px black;
 }
 .intro>p{
   text-align: center;
@@ -195,6 +196,8 @@ body {
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
     z-index: 2;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 @keyframes autoRun{
     from{
